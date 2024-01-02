@@ -239,5 +239,5 @@ GPIO.add_event_detect( channel, GPIO.BOTH, callback=h_event, bouncetime=200 )  #
 while True:       #화재 감지 interrupt가 계속 실행될 수 있게 무한 대기하면서 인터럽트 발생 상황 check함
   check_stat()    # Polling 방식으로 화재 상황 추가 점검함
   #
-  time.sleep( 500/1000 )                 # 300ms 대기 후 반복 처러함
+  time.sleep( 500/1000 )                 # 500ms 대기 후 반복 처러함
 #
